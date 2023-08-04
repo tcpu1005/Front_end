@@ -1,0 +1,317 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+body {
+  margin: 0;
+  width: auto;
+}
+
+.part0 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: rgb(255, 255, 255);
+  padding: 0px 0px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.part0 .sns_icons {
+  padding: 8px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.part0 .sns_icons a {
+  margin-right: 7px;
+  transition: transform 500ms ease-in-out;
+}
+
+.part0 .sns_icons .youtube_icon {
+  background-image: url("image/icons/유튜브아이콘.png");
+  width: 27px; /* Image's original width */
+  height: 27px; /* Image's original height */
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.part0 .sns_icons .insta_icon {
+  background-image: url("image/icons/인스타아이콘.png");
+  width: 20px; /* Image's original width */
+  height: 20px; /* Image's original height */
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.part0 .sns_icons .naver_blog_icon {
+  background-image: url("image/icons/네이버블로그아이콘.png");
+  width: 20px; /* Image's original width */
+  height: 20px; /* Image's original height */
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.part0 .sns_icons .smart_store_icon {
+  background-image: url("image/icons/스마트스토어아이콘.png");
+  width: 20px; /* Image's original width */
+  height: 20px; /* Image's original height */
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.part0 .sns_icons .youtube_icon:hover,
+.part0 .sns_icons .insta_icon:hover,
+.part0 .sns_icons .naver_blog_icon:hover,
+.part0 .sns_icons .smart_store_icon:hover {
+  transform: rotate(360deg);
+}
+
+.part0 .mypage {
+  padding: 8px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.part0 .mypage a {
+  color: black;
+  display: flex; /* Makes the list horizontal */
+  flex-direction: row; /* Ensures the items are in a row */
+  margin-right: 20px;
+  border: 1px;
+  border-right: 1px solid black;
+  padding-right: 10px; /* Add some space between the text and the border */
+  margin-right: 10px;
+}
+
+.part1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: rgb(0, 0, 0);
+  padding: 20px 20px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.part1 a {
+  color: #ffffff;
+}
+
+/*  */
+/* .part1 .part1_logo .part1_logo_image {
+  background-image: url("image/icons/스마트스토어아이콘.png");
+  width: 20px; 
+  height: 20px; 
+} */
+
+.part1_logo {
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  align-items: center;
+}
+
+.part1_menu {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.part1_menu li {
+  padding: 8px 8px;
+}
+
+.part1_menu li:hover {
+  background-color: rgb(242, 75, 75);
+  border-radius: 4px;
+}
+
+.part1_menu::-webkit-scrollbar {
+  height: 4px;
+}
+
+.part1_menu::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.part1_menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.part1_toogleBtn {
+  display: none;
+  color: aliceblue;
+  position: absolute;
+  right: 32px;
+}
+
+.fab {
+  font-size: 24px;
+  margin: 10px;
+  color: #ffffff;
+}
+
+.part2 .slideshow-container {
+  max-width: 100%;
+  position: relative;
+  height: auto; /* 높이를 500px로 설정했습니다. */
+  margin: 1px;
+}
+
+.part2 .slideshow-container .myslides img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 슬라이드를 페이드인/아웃 시키는 애니메이션을 만듭니다 */
+.part2 .slideshow-container .fade {
+  -webkit-animation: fade 3s infinite;
+  -moz-animation: fade 3s infinite;
+  -o-animation: fade 3s infinite;
+  animation: fade 3s infinite;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.part3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid rgb(206, 206, 206);
+  border-bottom: 1px solid rgb(206, 206, 206);
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+.part3 img {
+  border-radius: 10px;
+}
+
+.part4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(206, 206, 206);
+  padding-top: 10px;
+  width: 100%;
+}
+
+.part4 .part4_notice {
+  width: 50%;
+}
+
+.part4 .part4_notice h2 {
+  color: whitesmoke;
+  border: #0066b3 1px solid;
+  background: #0066b3;
+  padding: 4px;
+  text-align: center;
+  margin-bottom: 5cm;
+}
+
+.part4 .part4_notice .part4_notice_line {
+  border-bottom: 1px solid #9d9d9d;
+}
+
+.part4 .part4_notice li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .part1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .part1_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .part1_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .part1_toogleBtn {
+    display: block;
+  }
+
+  .part1_menu.active {
+    display: flex;
+  }
+
+  .part3 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}

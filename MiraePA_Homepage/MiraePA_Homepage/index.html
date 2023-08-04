@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiraePA_Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="test.js" defer></script>
+  </head>
+
+  <body>
+    <!-- 상단디자인 부분 -->
+    <!-- part1 -->
+    <!-- a href에 파일.html 주소 입력해서 클릭하면 이동하도록 삽입 -->
+    <div class="part0">
+      <div class="sns_icons">
+        <a href="" target="_blank" alt="유튜브아이콘" class="youtube_icon"> </a>
+        <a href="" target="_blank" alt="인스타아이콘" class="insta_icon"> </a>
+        <a
+          href=""
+          target="_blank"
+          alt="네이버블로그아이콘"
+          class="naver_blog_icon"
+        >
+        </a>
+        <a
+          href=""
+          target="_blank"
+          alt="스마트스토어아이콘"
+          class="smart_store_icon"
+        >
+        </a>
+      </div>
+      <div class="mypage">
+        <a href="" class="mypage_login">로그인</a>
+        <a href="" class="mypage_join_member">회원가입</a>
+        <a href="" class="mypage_basket">장바구니</a>
+        <a href="" class="mypage_myshopping">마이쇼핑</a>
+      </div>
+    </div>
+
+    <div class="part1">
+      <!-- 미래pa로고이미지 제작해서 css에 적용-->
+      <div class="part1_logo">
+        <a href="" class="part1_logo_image" alt="미래pa시스템이미지"
+          >MIRAE PA</a
+        >
+      </div>
+      <ul class="part1_menu">
+        <li><a href="">회사소개</a></li>
+        <li><a href="">전체상품</a></li>
+        <li><a href="">오디오믹서</a></li>
+        <li><a href="">홈레코딩</a></li>
+        <li><a href="">스피커</a></li>
+        <li><a href="">앰프</a></li>
+        <li><a href="">파워드믹서</a></li>
+        <li><a href="">마이크</a></li>
+        <li><a href="">무선마이크</a></li>
+        <li><a href="">비대면마이크</a></li>
+        <li><a href="">스텐드,브라켓</a></li>
+        <li><a href="">케이블,컨넥터</a></li>
+        <li><a href="">카페,강의,교육장</a></li>
+        <li><a href="">전원분배기</a></li>
+        <li><a href="">음향주변기기</a></li>
+      </ul>
+
+      <a href="#" class="part1_toogleBtn">Menu <i class="fas fa-bars"></i></a>
+    </div>
+    <!-- part1 끝 -->
+    <!-- part2 시작 -->
+    
+    <div class="part2">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <a href=""> <img src="image/main_banner/mainbanner_001.png" alt="메인배너1" style="width: 100%;"></a>
+        </div>
+      
+        <div class="mySlides fade">
+         <a href=""> <img src="image/main_banner/mainbanner_002.png" alt="메인배너2" style="width: 100%"></a>
+        </div>
+      
+        <div class="mySlides fade">
+          <a href=""><img src="image/main_banner/mainbanner_003.png" alt="메인배너3" style="width: 100%"></a>
+          
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    <!-- part2 끝 -->
+    <!-- part3 시작 -->
+    <div class="part3">
+      <span class="part3_section1">
+        <a href="" class="part3_section1_product"><img src="image/part3_product/001.png" alt="상품1"></a>
+      </span>
+      <span class="part3_section2">
+        <a href="" class="part3_section2_product"><img src="image/part3_product/002.png" alt="상품2"></a>
+      </span>
+      <span class="part3_section3">
+        <a href="" class="part3_section3_product"><img src="image/part3_product/003.png" alt="상품3"></a>
+      </span>
+      <span class="part3_section4">
+        <a href="" class="part3_section4_product"><img src="image/part3_product/004.png" alt="상품4"></a>
+      </span>
+    </div>
+
+    <div class="part4">
+      <div class="part4_notice">
+        <h2>공지사항</h2>
+        <ul>
+          <li class="part4_notice_line">내용<div>날짜</div></li>
+          <li><a href="">공지사항내용1</a><div>2023-7-19</div></li>
+          <li><a href="">공지사항내용2</a><div>2023-7-20</div></li>
+          <li><a href="">공지사항내용3</a><div>2023-7-21</div></li>
+        </ul>
+      </div>
+      <div class="part4_hotitem">
+        <a href="" class="part_hotitem_link">핫아이템<img src="" alt="핫아이템"></a>
+      </div>
+      
+    </div>
+    <!-- part4 끝 -->
+    
+
+    <!-- 메인 배너 1->2->3 순서 이동 자바 스크립트 -->
+    <script>
+              // 여기에 JavaScript 코드를 작성하세요.
+              var slideIndex = 0;
+
+        window.onload = function () {
+          showSlides();
+        };
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); // 2초마다 이미지를 변경
+        }
+    </script>
+  </body>
+</html>
